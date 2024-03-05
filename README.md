@@ -8,9 +8,6 @@ Technology Stack
 JavaScript Framework: React.js
 Major Plugins/Packages:
 Bootstrap: For responsive design and layout.
-Helmet: For managing the document head.
-Cloudinary: To upload and manage images.
-Axios: For making API requests.
 Animate.css: For adding animations.
 
 # Performance
