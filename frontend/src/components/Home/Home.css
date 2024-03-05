@@ -1,0 +1,73 @@
+.banner {
+  padding: 230px 0 100px 0;
+  background: white;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.banner .tagline {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 10px 10px;
+  background: #97b9fc;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 15px;
+  /* margin-bottom: 16px; */
+  margin-top: 0;
+  margin-left: 200px;
+  display: inline-block;
+}
+
+.banner h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: black;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p {
+  
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.tagline:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0;
+}
+.left{
+  margin-top: 100px;
+}
+

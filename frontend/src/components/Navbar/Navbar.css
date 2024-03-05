@@ -1,0 +1,115 @@
+nav.navbar {
+  padding: 12px 0 12px 0;
+  position: absolute;
+  background-color: #121212;
+  background: black;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 1px 2px rgba(243, 241, 241, 0.2);
+
+}
+  
+  
+  nav.navbar.scrolled {
+    background-color: #121212;
+    background: black;
+  }
+  
+  nav.navbar a.navbar-brand {
+    width: 9%;
+  }
+  .active{
+    color:black;
+  }
+
+  nav.navbar .navbar-nav .navbar-link {
+    font-weight: 400;
+    color: #c5bebe !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 18px;
+    opacity: 0.75;
+    text-decoration: none;
+  }
+  
+  nav.navbar .navbar-nav .navbar-link:hover,
+  nav.navbar .navbar-nav .navbar-link.active {
+    color: white !important; 
+    opacity: 1;
+    font-weight: 500;
+  }
+  span.navbar-text {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 767px) { 
+    .navbar-collapse {
+      text-align: left;
+      margin-left: -25px;
+    }
+   
+  }
+  
+  .navbar-text button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: padding 0.3s ease, margin 0.3s ease;
+  }
+  
+  .navbar-text button span {
+    z-index: 1;
+  }
+  
+  .navbar-text button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar-text button:hover {
+    color: #121212;
+  }
+  
+  .navbar-text button:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  nav.navbar .navbar-toggler {
+    
+    height: 32px; 
+   
+  }
+ nav.navbar .navbar-toggler-icon {
+  height: 1.1em;
+  width: 1.4em;
+  }
+  
+  nav.navbar .navbar-toggler:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(14, 14, 14, 0.5); 
+  }
+
+@media (max-width: 767px){
+.navbar-collapse {
+    text-align: right;
+    margin-right: -25px;
+}
+}
+
+.name{
+  color: white;
+}

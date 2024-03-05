@@ -1,0 +1,267 @@
+[
+  {
+    "id": 1,
+    "title": "OCR - Text Extractor",
+    "category": "Image Processing",
+    "description": "OCR (Optical Character Recognition) technology converts different types of documents, such as scanned paper documents, PDF files or images captured by a digital camera, into editable and searchable data.",
+    "use_cases": [
+      "Document digitization",
+      "Automatic number plate recognition",
+      "Business card digitization"
+    ],
+    "imageUrl": "https://cdn.analyticsvidhya.com/wp-content/uploads/2020/05/ocr_applications.jpg",
+    "popularity": "10",
+    "provider": "Various",
+    "input_type": "Image",
+    "code_snippet": "import pytesseract\nfrom PIL import Image\npytesseract.pytesseract.tesseract_cmd = r'/path/to/tesseract.exe'\nimage = Image.open('path/to/image.jpg')\ntext = pytesseract.image_to_string(image)\nprint(text)"
+  },
+  {
+    "id": "2",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "3",
+    "title": "AutoML",
+    "category": "Automated Machine Learning",
+    "description": "AutoML refers to the process of automating the tasks of applying machine learning to real-world problems. It simplifies the model selection, pre-processing, parameter tuning, and validation processes.",
+    "use_cases": ["Model selection", "Hyperparameter optimization"],
+    "popularity": "9",
+    "provider": "Various",
+    "input_type": "Text",
+    "imageUrl": "data:image/png;base64,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",
+    "code_snippet": "# Example code snippet not provided due to the wide variety of AutoML libraries and approaches"
+  },
+
+  {
+    "id": 4,
+    "title": "TensorFlow",
+    "category": "Machine Learning Framework",
+    "description": "TensorFlow is an open-source machine learning framework developed by Google. It offers extensive libraries and tools for developing and training ML models across a wide range of applications.",
+    "use_cases": [
+      "Image classification",
+      "Natural language processing",
+      "Time series forecasting"
+    ],
+    "popularity": "9",
+    "provider": "Google",
+    "input_type": "Text",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1200px-TensorFlow_logo.svg.png",
+    "code_snippet": "import tensorflow as tf\\nmodel = tf.keras.Sequential([\\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(feature_size,)),\\n    tf.keras.layers.Dense(1)\\n])\\nmodel.compile(optimizer='adam', loss='mean_squared_error')\\nmodel.fit(train_data, train_labels, epochs=10)"
+  },
+  {
+    "id": 5,
+    "title": "BERT",
+    "category": "Natural Language Processing",
+    "description": "BERT (Bidirectional Encoder Representations from Transformers) is a breakthrough model that redefined the state-of-the-art for a wide range of NLP tasks by employing a deep learning approach on large text corpora.",
+    "use_cases": ["Question answering", "Sentiment analysis"],
+    "popularity": "10",
+    "provider": "Google",
+    "input_type": "Text",
+    "imageUrl": "https://searchengineland.com/wp-content/seloads/2019/10/GoogleBert_1920.jpg",
+    "code_snippet": "from transformers import BertTokenizer, BertModel\ntokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertModel.from_pretrained('bert-base-uncased')\ninputs = tokenizer('Hello, this is a BERT model', return_tensors='pt')\noutputs = model(**inputs)"
+  },
+  {
+    "id": "6",
+    "title": "YOLO",
+    "category": "Object Detection",
+    "description": "You Only Look Once (YOLO) is a state-of-the-art, real-time object detection system that can identify objects in images and videos rapidly.",
+    "use_cases": [
+      "Surveillance",
+      "Vehicle detection",
+      "Real-time object tracking"
+    ],
+    "popularity": "10",
+    "provider": "Open Source",
+    "input_type": "Image",
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD///+2trZjY2Pw8PBqamqBgYGdnZ339/fY2Nirq6v09PTU1NT7+/tOTk7k5OS+vr5AQEB8fHxxcXFeXl6xsbEaGhpWVlbOzs6ioqI2NjbIyMiJiYkVFRV6enpFRUUmJiYeHh4qKiqUlJQoKCgxMTE4RDgRAAAEJUlEQVR4nO3Z2ZaiMBCAYXHcQBFatN0Ye3H6/V9xjhWEhCxtO8CZi/+7krCYMkklkdEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+C/8/snpYhcvoihKs/N8/dS3XcZxKg/Ir29PPeAJZXQztU+8yYlEKzhHukXyalyfe57T2B+MByyPnQTwvViqa5dnt/JJc5xHFqOK41vJr8AXHewHXDuKIezdruzNTIrrvnha2vWLokzrxN9EuHbdH8UdB+N2le96b5VK4e5+9HKv0mG+mRazJKsO0+a2cIT7+wPO88u0KOsHTHw3dEq+bWWW5Ubffa3iKevzr0k1mOqSYISn6upZXfJZ9fqsmxjCVAMZSWJtFqlf/GzcdZqYhcEI1bVjo2y9MPtJnxKjwW4yo/KqHyft21Tc96BCEaoGL1ulv9XYHmTaWLYiUFNIfehoAJHqIykQoSeZVeUrxx2d28pXfdXHcliPmbkvJajbtuogEOHYN+BUwn75l6o/KjdSt3mkWtg5l6+0zhyI0N8Zs8FGoqpEoT6rNPPnfmrrz+p7rTf7IyzMH0y3GW7GkFqk6rP8sM1yQ9LE3H2bNK9aFvgjzI0+b5Kf6OP5ev/Aqk42ZWvUxIGxkjc50h+hTBWeFf7KOwI6pyb108geNWZeNZVNEvZHGOqJ80AH6VpZjZa8Nfg/fInwZt+kGm+Eskk5eB5w8UxEvZDhV0h9llrxWsuXllMzoXkjnIaCkDSW/0Otf0Jqu8y0KU78CtXh/YEIZdLz7QXXQ0Y4OkYVo8WmoSnr49EIfUPtbdAIq/VxK60EIzw1Y8wbYRmKMNhDulftUjd2oa8O2jAKj0Nr2V7ZhH6/HoybTlf7cpTVymaMeSPch36iYzOhDmLj6lDt5KqTsGbNR1eEwenm0E5sPXMmBcmunoWVjNyTfPTP+Kk1th871wdnhIFl5UlrX3+EgZXZNtS+fXBGKF3XvTVItCHmj/BqzUC1c2iu7IN76pIE69zeyZm9+uyPUG3lPx1n1GL4y3GmL+4Ic18jHvU+FtgBx75GzEN5uhfuCNVfgXZKl3mkHmCBCLfGhQ21gX7uDciTPAusXO+NjYnRAqH/2iTXWHvM9zQ0U/bDt4SUCrby6ada49U723FgZvujHlAYhS/yf6njjUmffBGqbhZlWkerlulNSBLhddpSNfxFXb1qLv/YRc6G7Zl3G1BElcOxnM3KJI6sVhlHLvdOXFbH6VkesLu/t7C6fs/8G52ts/56p3RHWO/tL66z6WCvSe8CW7lX+/Xfwfh36ZsIR1+xdXLYJCM2i8lk4XttuTbfAZ9bWX63nNiWehDblRnfwEPwIUUSS8XjpPj+YpfLTj1gdRzmH0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgR/4CS5AjHbQSX50AAAAASUVORK5CYII=",
+    "code_snippet": "from yolov5 import YOLO\ndetector = YOLO('yolov5s')\nimage_path = 'path/to/your/image.jpg'\nresults = detector.detect(image_path)\nfor result in results:\n    print(f\"Detected {result['name']} with confidence {result['confidence']} at {result['bbox']}.\")"
+  },
+  {
+    "id": 7,
+    "title": "Transformer",
+    "category": "Natural Language Processing",
+    "description": "The Transformer model, introduced in the paper 'Attention is All You Need', is a deep learning model that adopts the mechanism of attention, weighing the influence of different parts of the input data differently.",
+    "use_cases": ["Machine translation", "Text summarization"],
+    "popularity": "9",
+    "provider": "Open Source",
+    "input_type": "Text",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDGbwdIE4UtkjjO5rtvQ3MRSCl4CXiPqTSKw&s",
+    "code_snippet": "from transformers import TransformerModel, TransformerTokenizer\ntokenizer = TransformerTokenizer.from_pretrained('transformer-model')\nmodel = TransformerModel.from_pretrained('transformer-model')\ninputs = tokenizer.encode('Sample text for transformer', return_tensors='pt')\noutputs = model(**inputs)"
+  },
+  {
+    "id": 8,
+    "title": "Keras",
+    "category": "Deep Learning",
+    "description": "Keras is an open-source software library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.",
+    "use_cases": ["Deep learning", "Neural network modeling"],
+    "popularity": "8",
+    "provider": "Open Source",
+    "input_type": "Text",
+    "imageUrl": "data:image/png;base64,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",
+    "code_snippet": "from keras.models import Sequential\nfrom keras.layers import Dense\nmodel = Sequential([\n    Dense(32, activation='relu', input_shape=(input_size,)),\n    Dense(1, activation='sigmoid')\n])\nmodel.compile(optimizer='sgd', loss='binary_crossentropy')\nmodel.fit(X_train, y_train, epochs=10)"
+  },
+  {
+    "id": 9,
+    "title": "DALL·E",
+    "category": "Image Generation",
+    "description": "A cutting-edge AI by OpenAI capable of generating detailed images from textual descriptions. It combines understanding of natural language with creativity.",
+    "use_cases": ["Art creation", "Concept visualization", "Educational tools"],
+    "imageUrl": "https://dce0qyjkutl4h.cloudfront.net/wp-content/uploads/2023/08/OpenAI-DALL-E.png",
+    "popularity": "10",
+    "popularity_reason": "DALL·E has generated over 2 million images for users, becoming a viral sensation on social media platforms.",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Image.create(prompt='a two-story pink house shaped like a shoe', n=1, size='1024x1024')\nimage_url = response.data[0].url\nprint(image_url)"
+  },
+  {
+    "id": 10,
+    "title": "spaCy",
+    "category": "Natural Language Processing",
+    "description": "spaCy is an open-source software library for advanced natural language processing, designed specifically for production use and provides an easy way to perform NLP tasks.",
+    "use_cases": [
+      "Tokenization",
+      "Named entity recognition",
+      "Part-of-speech tagging"
+    ],
+    "popularity": "8",
+    "provider": "Open Source",
+    "input_type": "Text",
+    "imageUrl": "data:image/jpeg;base64,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",
+    "code_snippet": "import spacy\nnlp = spacy.load('en_core_web_sm')\ndoc = nlp('Apple is looking at buying U.K. startup for $1 billion')\\nfor ent in doc.ents:\n    print(ent.text, ent.label_)"
+  },
+  {
+    "id": 11,
+    "title": "RoBERTa",
+    "category": "Natural Language Processing",
+    "description": "RoBERTa builds on BERT's language understanding capabilities with optimized training approaches, achieving state-of-the-art performance on a wide range of NLP benchmarks.",
+    "use_cases": ["Text classification", "Language modeling"],
+    "popularity": "10",
+    "provider": "Facebook AI",
+    "input_type": "Text",
+    "imageUrl": "https://editor.analyticsvidhya.com/uploads/70447roberta.PNG",
+    "code_snippet": "from transformers import RobertaTokenizer, RobertaModel\ntokenizer = RobertaTokenizer.from_pretrained('roberta-base')\nmodel = RobertaModel.from_pretrained('roberta-base')\ninputs = tokenizer(\"Hello, my dog is cute\", return_tensors=\"pt\")\noutputs = model(**inputs)"
+  },
+  {
+    "id": 12,
+    "title": "Bionic Reading",
+    "category": "Reading Enhancement",
+    "description": "Bionic Reading is a method that facilitates the reading process by guiding the eyes through text using artificially created fixation points. This method highlights the initial parts of words, making it easier for the brain to anticipate the reading, thereby enhancing focus, speed, and comprehension.",
+    "use_cases": [
+      "Enhanced reading comprehension",
+      "Speed reading",
+      "Assisting dyslexic readers"
+    ],
+    "imageUrl": "https://www.brainscape.com/academy/content/images/2023/05/Bionic-Reading-Read-like-an-AI-bot--think-like-a-human.png",
+    "popularity": "8",
+    "provider": "Bionic Reading GmbH",
+    "input_type": "Text",
+    "code_snippet": "/* Pseudocode for Bionic Reading conversion */\nfunction bionicReading(text) {\n  // Split text into words\n  let words = text.split(' ');\n  // Apply bionic reading technique to each word\n  words = words.map(word => {\n    let partLength = Math.ceil(word.length / 2);\n    // Bold the first half of the word\n    return `<b>${word.substring(0, partLength)}</b>${word.substring(partLength)}`;\n  });\n  // Rejoin words into processed text\n  return words.join(' ');\n}"
+  },
+  {
+    "id": 13,
+    "title": "ADULT GPT",
+    "category": "Content Moderation",
+    "description": "ADULT GPT is a specialized iteration of the Generative Pre-trained Transformer designed for understanding and moderating adult content across digital platforms. It leverages advanced NLP techniques to accurately identify, filter, or generate adult content, ensuring compliance with platform policies and regulations.",
+    "use_cases": [
+      "Automated content moderation",
+      "Age-appropriate content filtering",
+      "Content generation for age-restricted environments"
+    ],
+    "imageUrl": "https://m.media-amazon.com/images/I/81I03DheUwL._AC_UF1000,1000_QL80_.jpg",
+    "provider": "Custom AI Solutions Inc.",
+    "input_type": "Text",
+    "code_snippet": "/* Pseudocode for ADULT GPT content moderation */\nfunction moderateContent(text) {\n  // Example function call to ADULT GPT API\n  const response = adultGPT.moderate({ content: text });\n  if (response.isAdultContent) {\n    return { isAllowed: false, reason: 'Content identified as adult.' };\n  } else {\n    return { isAllowed: true };\n  }\n}"
+  },
+  {
+    "id": "14",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "15",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "16",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "17",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "18",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "19",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  },
+  {
+    "id": "20",
+    "title": "GPT-4",
+    "category": "Natural Language Processing",
+    "description": "GPT-4 is the fourth iteration of the Generative Pre-trained Transformer series, offering unparalleled text generation and understanding capabilities. It excels in creating coherent, context-aware text based on minimal prompts.",
+    "use_cases": ["Content creation", "Chatbots", "Language translation"],
+    "popularity": "10",
+    "provider": "OpenAI",
+    "input_type": "Text",
+    "imageUrl": "https://hypeinsight.com/wp-content/uploads/2023/04/How-to-get-the-very-best-results-and-usage-out-of-GPT-4-by-OpenAI-.png",
+    "code_snippet": "import openai\nopenai.api_key = 'your-api-key'\nresponse = openai.Completion.create(engine='gpt-4', prompt='Provide a summary for the following text: ', max_tokens=100)\nprint(response.choices[0].text.strip())"
+  }
+]

@@ -1,0 +1,82 @@
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.content-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  background: white;
+}
+
+
+
+
+.not-found{
+  text-align: center;
+   margin-top: 20% 
+   
+}
+.not-found>p{
+  color: white;
+  margin-top: 20px;
+}
+
+.not-found>h1{
+  color: white;
+}
+.not-found>button{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding:8px 8px;
+  background: #97b9fc;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin-top: 18px;
+  display: inline-block;
+}
+
+.loading-page-center{
+  text-align: center;
+  margin-top: 80px;
+  background-color: white;
+}
+
+
