@@ -1,6 +1,6 @@
-AI Model Web Application
+# AI Model Web Application
 
-**Overview**
+# Overview
 
 This project is an AI model web application that allows users to explore, learn about, and create various AI models. It features a user-friendly interface with a homepage that includes a "Get Started" button, an explore page showcasing all AI models (including featured ones), a detailed model page for learning about specific models, and a page for creating new AI models.
 
@@ -13,13 +13,18 @@ Cloudinary: To upload and manage images.
 Axios: For making API requests.
 Animate.css: For adding animations.
 
-**Performance**
-Page Load Time
-The page load time of the application is 217 ms. This was measured using the following JavaScript code snippet:
+# Performance
 
+Page Load Time: 
+
+The page load time of the application is 217 ms. 
+This was measured using the following JavaScript code snippet:
+
+```javascript
 const loadStartTime = window.performance.timing.navigationStart;
 const loadEndTime = window.performance.timing.loadEventEnd;
 const pageLoadTime = loadEndTime - loadStartTime;
+```
 
 
 
